@@ -1,0 +1,46 @@
+#content .context{
+    width: 80%;
+    float: right;
+    text-align: center;
+}
+#content .context table{
+    margin-top: 40px;
+
+}
+#content .context th{
+    background: sandybrown;
+    color: chocolate;
+    text-align: center;
+    padding: 5px;
+}
+#content .context tr{
+    color: chocolate;
+    text-align: center;
+    padding: 5px;
+
+}
+#content .qaa form{
+    color: chocolate;
+    margin: 40px auto;
+    float: left;
+
+}
+#content .qaa form input{
+    color: chocolate;
+    background: sandybrown;
+
+}
+#content .qaa{
+    text-align: center;
+    float: right;
+    width: 80%;
+    line-height: 30px;
+}
+
+#content .qaa button{
+    float: right;
+    color: chocolate;
+    background: sandybrown;
+    padding: 5px;
+    margin: 40px auto;
+}

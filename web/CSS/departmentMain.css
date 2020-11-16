@@ -1,0 +1,21 @@
+#content .context{
+    width: 80%;
+    float: right;
+    text-align: center;
+}
+#content .context table{
+    margin-top: 40px;
+
+}
+#content .context th{
+    background: sandybrown;
+    color: chocolate;
+    text-align: center;
+    padding: 5px;
+}
+#content .context tr{
+    color: chocolate;
+    text-align: center;
+    padding: 5px;
+
+}

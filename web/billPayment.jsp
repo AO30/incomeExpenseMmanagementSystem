@@ -1,0 +1,66 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Aotingting
+  Date: 2020-11-11
+  Time: 10:42 PM
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<html>
+<head>
+    <title>BillPayment</title>
+    <link rel="stylesheet" href="CSS/global.css">
+    <script type="text/javascript" src="JS/global.js"></script>
+</head>
+<body>
+<div id="content">
+    <div class="head">
+        <img src="images/title.png" class="img1"/>
+        <img src="images/vegetables.png"/>
+        <img src="images/fruits.png"/>
+        <img src="images/meat.png"/>
+        <img src="images/bread.png"/>
+        <img src="images/eggs.png"/>
+        <img src="images/hamburger.png">
+    </div>
+    <hr>
+    <div class="divide">
+        <p id="clock"></p>
+    </div>
+    <hr class="hr1">
+    <div id="nav">
+        <ul type="none">
+            <li><a href="queryIncome">Income management</a></li>
+            <li><a href="queryDept">Department management</a></li>
+            <li><a href="queryVendor">Vendor management</a></li>
+            <li><a href="queryVendor1">Bill management</a></li>
+            <li><a href="billPaymentMain.jsp">Bill Payment</a></li>
+        </ul>
+    </div>
+    <div class="context">
+        <table border="2" align="center" id="tb">
+            <tr>
+                <th>Vendor Name</th>
+                <th>Bill Date</th>
+                <th>Due Date</th>
+                <th>paidFlag</th>
+                <th>Payment</th>
+            </tr>
+            <c:forEach items="${bills}" var = "bill">
+                <tr>
+                    <td>${bill.vendor.vendor_name}</td>
+                    <td>${bill.bill_date}<br><br></td>
+                    <td>${bill.bill_due_date}<br><br></td>
+                    <td><input type="checkbox" disabled></td>
+                    <td><a href="updateBill1?bill_id=${bill.bill_id}">Payment</a></td>
+                </tr>
+            </c:forEach>
+        </table>
+
+    </div>
+</div>
+
+
+</body>
+</html>

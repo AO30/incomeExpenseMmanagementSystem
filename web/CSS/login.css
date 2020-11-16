@@ -1,0 +1,14 @@
+#content .context{
+    width: 100%;
+}
+#content .context .left{
+    width: 20%;
+    background: aqua;
+}
+#content .context .left img{
+    width: 20%;
+}
+#content .context .log{
+    width: 20%;
+    float: right;
+}

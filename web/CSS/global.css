@@ -1,0 +1,44 @@
+body,p,hr,ul,li{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+}
+#content{
+    width: 100%;
+}
+#content .head{
+    width: 100%;
+}
+#content .head img{
+    width: 14%;
+    float: left;
+}
+#content .head .img1{
+    width: 16%;
+    float: left;
+}
+#content .divide{
+    width: 100%;
+    height: 24px;
+    background: sandybrown;
+}
+#content #clock{
+    float: right;
+    line-height: 22px;
+    padding-right: 20px;
+}
+#content .hr1{
+    border: 4px solid chocolate;
+    width: 100%;
+}
+#content #nav{
+    float: left;
+    width: 20%;
+    height: 700px;
+    line-height: 30px;
+    text-align: left;
+    background: sandybrown;
+}
